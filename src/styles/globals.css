@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Allroundgothic;
+    src: url('/fonts/Fontspring-DEMO-allroundgothic-demi.otf');
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input,textarea{
+    @apply rounded p-3 outline-none focus-within:border-gray-500;
+    font-size: 1rem;
+}
+label{
+    @apply text-gray-800 dark:text-white mb-2
+}

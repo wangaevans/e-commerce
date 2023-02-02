@@ -1,0 +1,27 @@
+.ul {
+  position: absolute;
+    display: block;
+    top: 60px;
+    left: -100vw;
+    width: 50%;
+    height: 100vh;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+    @apply shadow-md  text-center space-y-5 text-xl min-h-[40vh]  pt-4;
+  }
+  .ul.active {
+    left: 0;
+  }
+  .ul.light {
+    @apply bg-slate-200;
+  }
+  .ul.dark {
+    @apply bg-gray-800;
+  }
+  
+  
+  @media (min-width: 731px) {
+    .ul{
+      max-width: 20%;
+    }
+    }
